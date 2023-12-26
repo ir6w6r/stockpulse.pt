@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4e4190, #9a23cd);
+}
+
+header {
+    color: white;
+    padding: 0.2em;
+    background-color: #4e4190;
+}
+
+h1 {
+    position: absolute;
+    margin-left: 4.5em;
+    font-size: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em;
+}
+
+.logo img {
+    max-width: 70px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+nav a:hover {
+    background-color: #d35fc9;
+}
+
+
+
+a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 74px;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #d970ff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #9a23cd;
+}
+@media (max-width: 600px) {
+  nav a:hover {
+    background-color: transparent; 
+  }
+}
+
+h2{
+  margin:20px;
+  color: #db80cf;
+  font-size:60px;
+}
+p{
+  margin:20px;
+  color: #fbacf1;
+  font-size:25px;
+}
+.main-section h2{
+  margin-bottom: 20px; 
+}
+.main-section p {
+  margin-bottom: 20px; 
+}
+.pri, .seg, .ter, .qua, .qui {
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24px;
+}

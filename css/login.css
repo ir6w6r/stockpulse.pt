@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4f3187, #9a23cd);
+  }
+  
+  .login-container {
+    background: linear-gradient(to right, #4e4190, #9a23cd);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    animation: slide-in 0.5s ease-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease-in-out; /* Adiciona transição para o efeito hover */
+  }
+  @media (max-width: 768px) {
+    .login-container {
+      width: 90%; 
+      margin: 0 5%; 
+    }
+  }
+  
+  .login-box {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #0099ff;
+    background: linear-gradient(to right, #74668f, #9a23cd);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #4caccd;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #00d5ff;
+  }
+  
+  .login-container:hover {
+    transform: translateY(-15px); /* Elevação de 5 pixels ao passar o mouse */
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  body::-webkit-scrollbar {
+      width: 12px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+      background-color: 
+  
+  #d970ff; /* Cor da barra de rolagem */
+      border-radius: 6px;
+  }
+  
+  body::-webkit-scrollbar-track {
+      background-color: 
+  
+  #9a23cd; /* Cor da área de fundo da barra de rolagem */
+  }
+  
